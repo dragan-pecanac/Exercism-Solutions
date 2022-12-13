@@ -11,8 +11,8 @@ class Lasagna
 {
     public int ExpectedMinutesInOven() => 40;
 
-/*Define the Lasagna.RemainingMinutesInOven() method that takes the actual minutes the lasagna has been in the oven as a parameter and returns how many minutes 
-the lasagna still has to remain in the oven, based on the expected oven time in minutes from the previous task.
+/*Define the Lasagna.RemainingMinutesInOven() method that takes the actual min. the lasagna has been in oven as parameter and returns how many min. 
+lasagna still has to remain in oven, based on the expected oven time in min. from previous task
 var lasagna = new Lasagna();
 lasagna.RemainingMinutesInOven(30);
 // => 10
@@ -20,8 +20,8 @@ lasagna.RemainingMinutesInOven(30);
 
 public int RemainingMinutesInOven(int MinutesInOven) => ExpectedMinutesInOven() - MinutesInOven;
 
-/*Define the Lasagna.PreparationTimeInMinutes() method that takes the number of layers you added to the lasagna as a parameter and returns how many minutes 
-you spent preparing the lasagna, assuming each layer takes you 2 minutes to prepare.
+/*Define the Lasagna.PreparationTimeInMinutes() method that takes the number of layers you added to the lasagna as a parameter and returns how many min. 
+you spent preparing the lasagna, assuming each layer takes you 2 min. to prepare
 var lasagna = new Lasagna();
 lasagna.PreparationTimeInMinutes(2);
 // => 4
@@ -29,9 +29,9 @@ lasagna.PreparationTimeInMinutes(2);
 
 public int PreparationTimeInMinutes(int NumberOfLayers) => NumberOfLayers * 2;
 
-/*Define the Lasagna.ElapsedTimeInMinutes() method that takes two parameters: the first parameter is the number of layers you added to the lasagna, 
-and the second parameter is the number of minutes the lasagna has been in the oven. The function should return how many minutes you've worked on cooking 
-the lasagna, which is the sum of the preparation time in minutes, and the time in minutes the lasagna has spent in the oven at the moment.
+/*Define the Lasagna.ElapsedTimeInMinutes() method that takes two parameters: the first parameter is number of layers you added to lasagna, and second parameter 
+is number of min. lasagna has been in oven. The function should return how many min. you've worked on cooking lasagna, the sum of the prep time in min. 
+and time in min. the lasagna has spent in oven
 var lasagna = new Lasagna();
 lasagna.ElapsedTimeInMinutes(3, 20);
 // => 26
